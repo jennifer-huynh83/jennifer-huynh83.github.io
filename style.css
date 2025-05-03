@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
   }
   
   nav {
@@ -60,3 +64,40 @@ body {
   .bio h1 {
     margin-top: 0;
   }
+
+/* case study content styles */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: #204060;
+  margin-top: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
