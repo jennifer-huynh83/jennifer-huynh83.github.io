@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
+    <nav class="main-nav">
         <ul>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="index.html">About Me</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="case-study-1.html">Case Study 1</a></li>
           <li><a href="case-study-2.html">Case Study 2</a></li>
@@ -17,12 +17,29 @@
         </ul>
     </nav>
 
-  <header>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#overview">Project Overview</a></li>
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#goal">The Goal</a></li>
+        <li><a href="#role">My Role</a></li>
+        <li><a href="#process-research">Research</a></li>
+        <li><a href="#process-sketching">Sketches</a></li>
+        <li><a href="#process-prototype">Prototyping</a></li>
+        <li><a href="#process-testing">Usability Testing</a></li>
+        <li><a href="#iteration">Iteration & Improvements</a></li>
+        <li><a href="#future">Future Steps</a></li>
+        <li><a href="#post-course">Post Course</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+    </nav>
+
+  <header class="intro">
     <h1>Designing for Safety: Redesigning Pierce Conservation District's Wildfire Preparedness Hub</h1>
     <p><strong>Winter 2025 | TGID 320 – University of Washington Tacoma</strong></p>
   </header>
 
-  <section>
+  <section id="overview" class="visual-block">
     <h2>Project Overview</h2>
     <p>
         In the heart of Pierce County, surrounded by evergreens and mountain views, a growing threat lingers 
@@ -33,7 +50,7 @@
     <p class="caption">Mt. Rainier National Park, Reflection Lake (Photo by Jennifer Huynh)</p>
   </section>
 
-  <section>
+  <section id="problem" class="highlight-box">
     <h2>The Problem</h2>
     <p>
         PCD’s existing wildfire preparedness webpage was outdated in both design and content, offering limited 
@@ -45,7 +62,7 @@
     <p class="caption">Original PCD Wildfire Preparedness Webpage</p>
   </section>
 
-  <section>
+  <section id="goal" class="visual-block">
     <h2>The Goal</h2>
     <p>Redesign the webpage to be accessible, user-friendly, and tailored to the rural communities most at risk.</p>
     <img src="image3.jpg" alt="Image of Pierce County">
@@ -55,24 +72,28 @@
     </p>
   </section>
 
-  <section>
+  <section id="role">
     <h2>My Role</h2>
-    <p>
-        As part of a community-focused UX design course at the University of Washington Tacoma, I took on this project 
-        solo, from research through iteration. I collaborated with PCD staff and community partners to ensure the final 
-        design would genuinely serve the people most affected by wildfire threats. My responsibilities included:
-    </p>
-    <ul>
-      <li>Partnered with PCD staff to define the problem</li>
-      <li>Conducted research</li>
-      <li>Built and tested prototypes within the CMS</li>
-      <li>Ran usability tests</li>
-      <li>Iterated based on feedback</li>
-      <li>Presented the final design</li>
-    </ul>
+    <div class="two-column">
+      <div>
+        <p>
+            As part of a community-focused UX design course at the University of Washington Tacoma, I took on this project 
+            solo, from research through iteration. I collaborated with PCD staff and community partners to ensure the final 
+            design would genuinely serve the people most affected by wildfire threats. My responsibilities included:
+        </p>
+        <ul>
+          <li>Partnered with PCD staff to define the problem</li>
+          <li>Conducted research</li>
+          <li>Built and tested prototypes within the CMS</li>
+          <li>Ran usability tests</li>
+          <li>Iterated based on feedback</li>
+          <li>Presented the final design</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <section id="process-research" class="visual-block">
     <h2>Process – Research & Discovery</h2>
     <p>
         The research started with a question: How do rural homeowners in Pierce County find and use wildfire preparedness 
@@ -115,7 +136,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="process-sketching">
     <h2>Process – Sketching & Ideation</h2>
     <p>
         The website uses a restrictive content management system (CMS) where the type of content you can include (text, video, images, etc.) is in widget 
@@ -128,7 +149,7 @@
     <p class="caption">First Iteration Sketch</p>
   </section>
 
-  <section>
+  <section id="process-prototype" class="visual-block">
     <h2>Process – Prototyping</h2>
     <p>
         Rather than designing in Figma, I built the high-fidelity prototype directly within the website’s CMS, ensuring it could be realistically implemented. 
@@ -148,7 +169,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="process-testing">
     <h2>Process – Usability Testing</h2>
     <p>
         Testing was conducted using a survey-based format due to limitations in reaching rural users. Similar to how a typical usability test would go, 
@@ -203,27 +224,29 @@
             questions as if they were middle-aged homeowners in Eatonville.
         </li>
       </ul>
-    <h3>Key Feedback:</h3>
-    <ul>
-      <li>The overall usability was rated positively, most tasks were rated towards “easy”, with a few towards “difficult”, mostly due to confusion about the tasks.</li>
-      <li>Improved navigation – A navigation bar would help users identify what is on the webpage at a glance.</li>
+    <div class="highlight-box">
+      <h3>Key Feedback:</h3>
       <ul>
-        <li>“A search bar would allow users to quickly find specific information.”</li>
-        <li>“... ensuring that key sections are easily accessible without too much scrolling”</li>
+        <li>The overall usability was rated positively, most tasks were rated towards “easy”, with a few towards “difficult”, mostly due to confusion about the tasks.</li>
+        <li>Improved navigation – A navigation bar would help users identify what is on the webpage at a glance.</li>
+        <ul>
+          <li>“A search bar would allow users to quickly find specific information.”</li>
+          <li>“... ensuring that key sections are easily accessible without too much scrolling”</li>
+        </ul>
+        <li>Clearer action items – Participants wanted structured instructions on preparedness programs.</li>
+        <ul>
+          <li>“Use clear and prominent call-to-action buttons...”</li>
+          <li>“Adding a quick ‘Get Started’ button…”</li>
+        </ul>
+        <li>Real-time wildfire updates – Users requested current wildfire status, seasonal risk updates, and burn ban information.</li>
+        <ul>
+          <li>“Real-time or frequently updated information on current fire danger levels in Pierce County would be extremely valuable.”</li>
+        </ul>
       </ul>
-      <li>Clearer action items – Participants wanted structured instructions on preparedness programs.</li>
-      <ul>
-        <li>“Use clear and prominent call-to-action buttons...”</li>
-        <li>“Adding a quick ‘Get Started’ button…”</li>
-      </ul>
-      <li>Real-time wildfire updates – Users requested current wildfire status, seasonal risk updates, and burn ban information.</li>
-      <ul>
-        <li>“Real-time or frequently updated information on current fire danger levels in Pierce County would be extremely valuable.”</li>
-      </ul>
-    </ul>
+    </div>
   </section>
 
-  <section>
+  <section id="iteration">
     <h2>Iteration & Improvements</h2>
     <p>The next iteration should include:</p>
     <ul>
@@ -234,7 +257,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="future" class="visual-block">
     <h2>Future Steps</h2>
     <p>The project is continuing with several key opportunities for improvement:</p>
     <ul>
@@ -245,7 +268,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="post-course" class="visual-block">
     <h2>Post Course</h2>
     <p>
         Due to the limited time of the course, further iterations were completed voluntarily outside of the course. 
@@ -259,7 +282,7 @@
     <p>(Need to grab a better screenshot of the most current webpage)</p>
   </section>
 
-  <section>
+  <section id="reflection" class="highlight-box">
     <h2>Reflection</h2>
     <p>
         Due to course constraints, limited access to target users, and restrictions within the CMS, the design process 
