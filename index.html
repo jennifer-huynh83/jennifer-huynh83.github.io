@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+  <!-- global nav -->
   <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="case-study-1.html">Case Study 1</a></li>
-      <li><a href="case-study-2.html">Case Study 2</a></li>
-      <li><a href="case-study-3.html">Case Study 3</a></li>
-    </ul>
+    <a href="index.html">About Me</a>
+
+    <!-- dropdown for links -->
+    <div class="dropdown">
+      <button class="dropbtn">Links ▾</button>
+      <div class="dropdown-content">
+        <a href="https://www.canva.com/design/DAGK3Q7njaI/WhJYyzUm9D338RJ2fc0bxg/view?utm_content=DAGK3Q7njaI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd05f2b506c">Resume</a>
+        <a href="www.linkedin.com/in/jennifer-huynh-694130319">Linkedin</a>
+        <a href="https://github.com/jennifer-huynh83">Github</a>
+      </div>
+    </div>
+
+    <!-- dropdown for case studies -->
+    <div class="dropdown">
+      <button class="dropbtn">Case Studies ▾</button>
+      <div class="dropdown-content">
+        <a href="case-study-1.html">Case Study 1</a>
+        <a href="case-study-2.html">Case Study 2</a>
+        <a href="case-study-3.html">Case Study 3</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
   </nav>
 
   <section class="landing">
+    <!-- profile pic -->
     <div class="picture">
       <img src="my-photo.jpg" alt="Photo of Jennifer Huynh">
     </div>
+
+    <!-- bio -->
     <div class="bio">
-      <h1>Hello, I'm Jennifer Huynh</h1>
+      <h1>Bridging the gap between software development and user experience</h1>
+
+      <h2>Hello, I'm Jennifer Huynh</h2>
+
       <p>
         I’m Jennifer Huynh, a senior at the University of Washington Tacoma, graduating in Spring 2025 with a major in Computer Science 
         and Systems and a minor in Innovation and Design. I focus on full-stack development with a strong emphasis on user experience, 
@@ -40,5 +65,6 @@
       </p>
     </div>
   </section>
-</body>
+
+  </body>
 </html>
