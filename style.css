@@ -5,14 +5,14 @@ body {
   padding: 0;
 
   line-height: 1.6;
-  background-color: #ffffff;
+  background-color: #EEEAE8;
   color: #000000;
 }
 
 /* ------------------------------------------------------------------- */
 /* main nav */
 .main-nav {
-  background-color: #004d44;
+  background-color: #22443d;
   padding: 2.5rem;
   display: flex;
   justify-content: space-evenly;
@@ -28,7 +28,7 @@ body {
   all: unset;
   font-family: inherit; 
   font-size: 20px;
-  color: #FF91AF;
+  color: #DAECD5;
   text-decoration: none;
   font-weight: bold;
 }
@@ -82,7 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10rem 2rem;
-  background-color: #ffffff;
+  background-color: #EEEAE8;
   min-height: 80vh;
 }
 
@@ -124,13 +124,13 @@ body {
   top: 150px;
   height: 70%;
   width: 200px;
-  background-color: #333;
+  background-color: #1a4f55;
   display: flex;
   flex-direction: column;
 }
 
 .sub-nav a {
-  color: white;
+  color: #DFF2F7;
   padding: 8px 20px;
   text-decoration: none;
   display: block;
@@ -152,7 +152,7 @@ section {
 }
 
 h1, h2, h3 {
-  color: #135031;
+  color: #22443d;
   margin-top: 1.5rem;
 }
 
@@ -178,16 +178,16 @@ img {
 }
 
 .visual-block {
-  background-color: #97b082d1;
+  background-color: #95B2A2;
   padding: 1.5rem;
-  border-left: 5px solid #4C7954;
+  border-left: 5px solid rgb(54, 87, 60);
   border-radius: 6px;
 }
 
 .highlight-box {
-  background-color: #ffc8d7d6;
+  background-color: #dfbab0;
   padding: 1.5rem;
-  border-left: 5px solid #FFADC3;
+  border-left: 5px solid #a98c85;
   border-radius: 6px;
 }
 
