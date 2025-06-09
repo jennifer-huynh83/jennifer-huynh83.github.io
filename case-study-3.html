@@ -34,7 +34,211 @@
 
     <a href="contact.html">Contact</a>
   </nav>
-    <div class="main-content"></div>
+  
+
+  <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+  <!-- sub nav -->
+    <nav class="sub-nav">
+      <a href="#overview">Project Overview</a>
+      <a href="#problem">The Problem</a>
+      <a href="#goal">The Goal</a>
+      <a href="#role">My Role</a>
+      <a href="#process-backend">Building Backend</a>
+      <a href="#process-frontend">Building Frontend</a>
+      <a href="#takeaways">Takeaways</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+
+  <div class="main-content">
+    <header class="intro">
+        <h1>Case Study: Creating a Full-Stack Book Management Web Application</h1>
+        <p><strong>Spring 2024 | TCSS 460 Client/Server Programming for Internet Applications</strong></p>
+        <p><strong>Role:</strong> Full-Stack Developer</p>
+        <p><strong>Tools Used:</strong> React, Next.js, Node.js, Express, PostgreSQL, Postman, ApiDoc.js, GitHub</p>
+    </header>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="overview" class="visual-block">
+        <h2>Project Overview</h2>
+        <p>
+            As part of the TCSS 460 course, in collaboration, I completed a two-part group project aimed at building a fully 
+            functional, full-stack book management application. Our team was responsible for creating both the Web API (Back-End) 
+            and a React/Next.js front end that consumes that API.
+        </p>
+        <p>
+            This case study walks you step by step through both my work on the back-end and front-end sides, starting from the 
+            development of secure and well-documented API endpoints to implementing a friendly interface for interacting with 
+            the data.
+        </p>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="problem" class="highlight-box">
+        <h2>The Problem</h2>
+        <p>
+            How do we design a secure, scalable, and well-documented Web API, and then build a seamless front-end interface that 
+            effectively interacts with it?
+        </p>
+        <p>
+            The project was divided into two major phases:
+            <ul>
+                <li>
+                  <strong>Back-End:</strong> Create a fully functional Web API using Express and PostgreSQL with proper authentication, 
+                  documentation, and testing.
+                </li>
+                <li>
+                  <strong>Front-End:</strong> Create a React/Next.js web application to allow users to interact with the API 
+                  (view, search, add, and edit book records).
+                </li>
+            </ul>
+        </p>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="goal" class="visual-block">
+        <h2>The Goal</h2>
+        <p>
+            Create a front-end interface with clear navigation and responsive design that supports viewing, searching, adding, and 
+            editing books using a secure, well-tested, and documented Web API.
+        </p>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="role">
+        <h2>My Role</h2>
+        <p>As a full-stack developer, I worked on both phases of the project:</p>
+        <ul>
+            <li><strong>Back-End:</strong>
+                <ul>
+                    <li>Designed and implemented secure API routes</li>
+                    <li>Developed complex filtering queries (search by title, author, rating, etc.)</li>
+                    <li>Wrote unit tests in Postman for every route</li>
+                    <li>Documented all API endpoints using ApiDoc.js and hosted it via GitHub Pages</li>
+                </ul>
+            </li>
+            <li><strong>Front-End:</strong>
+                <ul>
+                    <li>Assisted in building core UI pages: Book Detail, Book List/Search, and Book Creation</li>
+                    <li>Integrated API calls using fetch and handled error responses</li>
+                    <li>Styled UI with consistent design and responsive layout</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="process-backend" class="visual-block">
+        <h2>Process – Back-End Development & Documentation</h2>
+        <p>
+            We started by cloning a provided Express/Postgres template, which we expanded into a fully custom API. Our primary goal 
+            was to offer multiple ways to read, add, update, and delete book records securely.
+        </p>
+        <p>Key Activities:</p>
+        <ul>
+            <li>Implemented routes:
+                <ul>
+                    <li>GET /books (with pagination)</li>
+                    <li>GET /books/isbn/:isbn13</li>
+                    <li>GET /books/title, /author, /rating</li>
+                    <li>POST /books to add a book</li>
+                    <li>PATCH /books/:isbn13 to update ratings</li>
+                    <li>DELETE /books/:isbn13 or by range</li>
+                </ul>
+            </li>
+            <li>Secured endpoints using credentialing middleware</li>
+            <li>Used Postman to create test suites and validate route behavior</li>
+            <li>Created API documentation with ApiDoc.js, including:
+                <ul>
+                    <li>Method descriptions</li>
+                    <li>Route parameters</li>
+                    <li>Success and error responses with status codes</li>
+                </ul>
+            </li>
+            <li>Hosted API docs via GitHub Pages for public access</li>
+        </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="process-frontend">
+      <h2>Process – Front-End Development with React/Next.js</h2>
+      <p>
+          With a new Git repo and starting code, I built a front-end based on React to access the back-end API. The back-end API used 
+          in this part of the project belonged to another team. This was done to simulate the idea and implementation of how front-end 
+          developers collaborate with others' back-end without accessing code.
+      </p>
+      <p>As we begain by creating a digital mockup as a reference to what the end goal looks like.</p>
+      <img src="images/book-ui/book_ui_inital_prototype.png" alt="Digital prototype">
+      <p class="caption">Digital mockup</p>
+
+      <p>Primary pages built:</p>
+      <ul>
+        <li><strong>View Single Book:</strong> Displays full details, allows rating updates, and handles feedback</li>
+        <li>
+          <strong>Search & View Multiple Books:</strong> Search by title, author, or rating with pagination and responsive layout
+          <img src="images/book-ui/book_ui_initial_explore_page.png" alt="Inital explore page">
+          <p class="caption">Inital explore page</p>
+          <img src="images/book-ui/book_ui_explore.png" alt="Explore page">
+          <p class="caption">Iteration of explore page</p>
+        </li>
+        <li>
+          <strong>Create New Book:</strong> Form to add book, handled missing images, and ensured data consistency
+          <img src="images/book-ui/book_ui_intial_create_book.png" alt="Inital create book page">
+          <p class="caption">Inital create book page</p>
+          <img src="images/book-ui/book_ui_add_book.png" alt="Iteration of create book page">
+          <p class="caption">Iteration of create/add book page</p>
+          <img src="images/book-ui/book_ui_book_added.png" alt="Explore page with book added">
+          <p class="caption">Explore page with new book added</p>
+        </li>
+      </ul>
+      <p>Other tasks included:</p>
+      <ul>
+        <li>
+          Logo for the user interface
+          <img src="images/book-ui/book_ui_logo1.png" alt="inital logo">
+          <p class="caption">Inital logo</p>  
+          <img src="images/book-ui/book_ui_logo2.png" alt="iterated logo">
+          <p class="caption">Iterated logo</p>  
+        </li>
+        <li>Unified header/footer navigation across all pages</li>
+        <li>Maintained design consistency using reusable components</li>
+        <li>Focused on accessibility (semantic HTML, alt text, contrast)</li>
+      </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="takeaways" class="highlight-box">
+        <h2>Takeaways</h2>
+        <h3>What I Learned:</h3>
+        <ul>
+            <li>How to work between front-end and back-end systems in real time</li>
+            <li>The importance of thorough API documentation and unit testing</li>
+            <li>How to design user flows that are both intuitive and backed by real data</li>
+            <li>The role of iteration in debugging and refining usability</li>
+        </ul>
+
+        <h3>Skills Gained:</h3>
+        <ul>
+            <li>Full-stack development using Node.js, Express, PostgreSQL, React, and Next.js</li>
+            <li>REST API design, testing, and documentation</li>
+            <li>Front-end development and UI/UX best practices</li>
+            <li>Version control and collaboration via Git and GitHub</li>
+        </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="reflection">
+        <h2>Reflection</h2>
+        <p>
+            This project taught me the value of building both sides of a system. I gained first-hand experience dealing with edge 
+            cases, data inconsistencies, and real-world communication challenges between front-end and back-end developers.
+        </p>
+        <p>
+            While the technical tasks were challenging, the biggest lesson came from aligning both systems into one cohesive product. 
+            Balancing the user’s experience with underlying system logic helped me grow as a thoughtful and flexible developer.
+        </p>
+    </section>
+
+  </div>
 </body>
 </html>
 
