@@ -76,12 +76,28 @@ body {
 
 /* ------------------------------------------------------------------- */
 /* about me page */
-.landing {
+.about-me {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10rem 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 1px;
+  background-color: #EEEAE8;
+  min-height: 80vh;
+}
+
+.more-about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1px;
+  padding-bottom: 4rem;
   background-color: #EEEAE8;
   min-height: 80vh;
 }
